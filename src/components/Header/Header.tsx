@@ -1,24 +1,9 @@
-import React from 'react';
+type HeaderProps = {
+    mode: string,
+    onclick: ()=>void
+}
+export const Header = ({mode, onclick}:HeaderProps) => {
 
-export const Header = () => {
-    const lightButton = document.getElementById('light-mode');
-    const darkButton = document.getElementById('dark-mode');
-
-    const switchToDark=()=>{
-        document.body.classList.toggle('dark-mode')
-        if (darkButton && lightButton){
-            lightButton.style.display = "none"
-            darkButton.style.display = "block"
-        }
-    }
-
-    const switchToLight=()=>{
-        document.body.classList.toggle('dark-mode')
-        if (darkButton && lightButton){
-            lightButton.style.display = "block"
-            darkButton.style.display = "none"
-        }
-    }
 
     return (
         <section className="header">
@@ -26,14 +11,14 @@ export const Header = () => {
             <button
                 className="mode mode-active"
                 id='light-mode'
-                onClick={switchToDark}
+                onClick={onclick}
             >
                 <img src="icons/light-mode.png" alt=""/>
             </button>
             <button
                 className="mode"
                 id='dark-mode'
-                onClick={switchToLight}
+                onClick={onclick}
             >
                 <img src="icons/dark-mode.png" alt=""/>
             </button>

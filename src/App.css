@@ -9,24 +9,41 @@
 }
 
 :root{
-  --main-color: #FEF6DD;
-  --border-color: #B7A261;
-  --card-text-color: #685D5D;
-  --card-background-color: #FDF4F4;
-  --active-color: #9D8640;
+  --color-main: #FEF6DD;
+  --color-border: #B7A261;
+  --color-card-text: #685D5D;
+  --color-card-background: #FDF4F4;
+  --color-active: #B7A261;
+  --color-profile: #000000;
+  --color-contacts: #F9F6EA;
+  --color-backProfile: white;
+  --color-button: #E0CE93;
 }
 
 .dark-mode{
-  --main-color: #131312;
+  --color-main: #131312;
+  --color-border: #4B3D10;
+  --color-card-text: #D1D1CD;
+  --color-card-background: #625839;
+  --color-active: #C2B293;
+  --color-profile: #CCC0C0;
+  --color-contacts: #3B3729;
+  --color-backProfile: black;
+  --color-button: #C2B293;
 }
 
 h1{
   font-size: 38px;
 }
 
+h2{
+  font-size: 26px;
+  font-weight: bold;
+}
+
 main{
   padding: 0 159px;
-  background-color: var(--main-color);
+  background-color: var(--color-main);
 }
 
 .header{
@@ -34,12 +51,12 @@ main{
   padding: 36px 75px;
   justify-content: space-between;
   align-items: center;
-  color: var(--active-color);
+  color: var(--color-active);
   font-family: 'Sigmar One', sans-serif;
 }
 
 .mode{
-  background-color: var(--active-color);
+  background-color: var(--color-active);
   border: none;
   border-radius: 50%;
   width: 59px;
@@ -53,4 +70,79 @@ main{
 
 .mode-active{
   display: block;
+}
+
+.profile{
+  border-radius: 13px;
+  border: 3px var(--color-border) solid;
+  padding: 157px 43px 35px 43px;
+  margin-top: 56px;
+  background-color: var(--color-backProfile);
+}
+
+.profile-container{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  color: var(--color-profile);
+}
+
+.profile-main{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.profile-main img{
+  width: 200px;
+  height: 200px;
+  border-radius: 14px;
+  border: 5px var(--color-border) solid;
+  position: absolute;
+  bottom: 103%;
+}
+
+.profile-main span{
+  padding: 10px 20px;
+  background-color: var(--color-main);
+  border: 1px var(--color-border) solid;
+  border-radius: 6px;
+}
+
+.profile-social{
+  display: flex;
+  gap: 16px;
+  margin: 34px 0 40px 0;
+}
+
+.profile-contacts{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-contacts);
+  padding: 21px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.profile-contacts ul{
+  list-style: none;
+}
+
+.profile-contacts ul li{
+  margin: 11px 0;
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+
+.profile-button button{
+  border-radius: 8px;
+  border: 2px var(--color-border) solid;
+  font-weight: bold;
+  background-color: var(--color-button);
+  padding: 12px 31px;
 }
