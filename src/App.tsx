@@ -6,6 +6,11 @@ import {Navbar} from "./components/Navbar/Navbar";
 
 function App() {
     const [mode, setMode] = useState('light')
+    const [tab, setTab] = useState('about')
+
+    const handleClick = (tab: string)=>{
+        setTab(tab)
+    }
 
     const toggleMode = () => {
         const lightButton = document.getElementById('light-mode');
@@ -25,17 +30,19 @@ function App() {
                 <Header mode={mode} onclick={toggleMode}/>
             </header>
 
-            <aside>
-                <Profile mode={mode}/>
-            </aside>
+            <section className="main-container">
+                <aside>
+                    <Profile mode={mode}/>
+                </aside>
 
-            <section>
+                <section>
 
+                </section>
+
+                <nav>
+                    <Navbar tab={tab} onclick={() => handleClick} mode={mode}/>
+                </nav>
             </section>
-
-            <nav>
-                <Navbar/>
-            </nav>
 
         </main>
     );

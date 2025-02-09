@@ -46,6 +46,13 @@ main{
   background-color: var(--color-main);
 }
 
+.main-container{
+  display: flex;
+  gap: 52px;
+  align-items: center;
+  padding-top: 38px;
+}
+
 .header{
   display: flex;
   padding: 36px 75px;
@@ -76,7 +83,6 @@ main{
   border-radius: 13px;
   border: 3px var(--color-border) solid;
   padding: 157px 43px 35px 43px;
-  margin-top: 56px;
   background-color: var(--color-backProfile);
 }
 
@@ -145,4 +151,34 @@ main{
   font-weight: bold;
   background-color: var(--color-button);
   padding: 12px 31px;
+}
+
+.nav-container{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 33px 27px;
+  border: 3px var(--color-border) solid;
+  border-radius: 15px;
+  background-color: var(--color-backProfile);
+}
+
+.nav-container button{
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  height: 66px;
+  width: 71px;
+  border-radius: 6px;
+  background-color: var(--color-main);
+  border: none;
+  cursor: pointer;
+  color: var(--color-profile);
+}
+
+.nav-container .button-active{
+  background-color: var(--color-active);
 }
