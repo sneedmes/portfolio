@@ -24,7 +24,7 @@
   --color-main: #131312;
   --color-border: #4B3D10;
   --color-card-text: #D1D1CD;
-  --color-card-background: #625839;
+  --color-card-background: #60594B;
   --color-active: #C2B293;
   --color-profile: #CCC0C0;
   --color-contacts: #3B3729;
@@ -42,7 +42,7 @@ h2{
 }
 
 main{
-  padding: 0 159px;
+  padding: 0 100px;
   background-color: var(--color-main);
 }
 
@@ -181,4 +181,55 @@ main{
 
 .nav-container .button-active{
   background-color: var(--color-active);
+}
+
+.about {
+  border-radius: 14px;
+  border: 3px var(--color-border) solid;
+  background-color: var(--color-backProfile);
+  font-family: "Poppins", sans-serif;
+  padding: 29px 56px 43px 44px;
+  color: var(--color-profile);
+  margin-bottom: 50px;
+}
+
+.about-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.about-container h3{
+  font-size: 28px;
+}
+
+.about-container h4{
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.about-cards{
+  display: flex;
+  gap: 34px;
+  flex-wrap: wrap;
+}
+
+.about-card{
+  border: 3px var(--color-border) solid;
+  border-radius: 9px;
+  display: flex;
+  gap: 15px;
+  background-color: var(--color-card-background);
+}
+
+.card-text{
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 18px 10px 0 0;
+}
+
+.card-text p{
+  font-size: 13px;
 }

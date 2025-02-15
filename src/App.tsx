@@ -3,6 +3,7 @@ import './App.css';
 import {Header} from "./components/Header/Header";
 import {Profile} from "./components/Profile/Profile";
 import {Navbar} from "./components/Navbar/Navbar";
+import {About} from "./components/MainInfo/About";
 
 function App() {
     const [mode, setMode] = useState('light')
@@ -36,11 +37,11 @@ function App() {
                 </aside>
 
                 <section>
-
+                    {tab === "about" && <About/>}
                 </section>
 
                 <nav>
-                    <Navbar tab={tab} onclick={() => handleClick} mode={mode}/>
+                    <Navbar tab={tab} onclick={handleClick} mode={mode}/>
                 </nav>
             </section>
 

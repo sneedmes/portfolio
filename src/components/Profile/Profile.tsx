@@ -23,10 +23,10 @@ export const Profile = ({mode}:profileProps) => {
                             : <img src="icons/github-dark.png" alt="" id="git-dark"/>
                         }
                     </a>
-                    <a href="" target="_blank">
+                    <a href="#" target="_blank">
                         <img src="icons/telegramm.png" alt=""/>
                     </a>
-                    <a href="" target="_blank">
+                    <a href="https://vk.com/sneedme" target="_blank">
                         {mode === 'light'
                             ? <img src="icons/vk.png" alt="" id="vk-light"/>
                             : <img src="icons/vk-dark.png" alt="" id="vk-dark"/>
