@@ -7,26 +7,18 @@ type NavProps = {
 }
 
 export const Navbar = ({tab, onclick, mode}:NavProps) => {
-    const modecheck=(page: string)=>{
-        if(mode === "light"){
-            if(tab===page){
-                return true
-            }
-        }
-    }
-
     return (
         <section className="nav">
             <div className="nav-container">
                 <button onClick={()=>onclick("about")} className={tab === 'about' ? "button-active" : ""}>
-                    {modecheck(tab)
-                        ? <img src="icons/about-dark.png" alt=""/>
-                        : <img src="icons/about.png" alt=""/>
+                    {mode === 'light'
+                        ? <img src="icons/about.png" alt=""/>
+                        : <img src="icons/about-dark.png" alt=""/>
                     }
                     About
                 </button>
                 <button onClick={()=>onclick("experience")} className={tab === 'experience' ? "button-active" : ""}>
-                    {modecheck(tab)
+                    {mode === 'light'
                         ? <img src="icons/experience.png" alt=""/>
                         : <img src="icons/experience-dark.png" alt=""/>
                     }
