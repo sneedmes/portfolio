@@ -187,7 +187,7 @@ main{
   background-color: var(--color-active);
 }
 
-.about, .experience{
+.about, .experience, .projects{
   border-radius: 14px;
   border: 3px var(--color-border) solid;
   background-color: var(--color-backProfile);
@@ -299,3 +299,28 @@ main{
   gap: 6px;
 }
 
+.projects-cards{
+  display: flex;
+  gap: 34px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  justify-content: center;
+}
+
+.projects-card{
+  border: 3px var(--color-border) solid;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--color-card-background);
+  padding: 22px 21px;
+  cursor: pointer;
+}
+
+
+.projects-card a{
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color-profile);
+}

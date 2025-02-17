@@ -5,6 +5,7 @@ import {Profile} from "./components/Profile/Profile";
 import {Navbar} from "./components/Navbar/Navbar";
 import {About} from "./components/MainInfo/About";
 import {Experience} from "./components/MainInfo/Experience";
+import {Projects} from "./components/MainInfo/Projects";
 
 function App() {
     const [mode, setMode] = useState('light')
@@ -40,6 +41,7 @@ function App() {
                 <section className='section'>
                     {tab === "about" && <About/>}
                     {tab === "experience" && <Experience/>}
+                    {tab === "projects" && <Projects/>}
                 </section>
 
                 <nav>
