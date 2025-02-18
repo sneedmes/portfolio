@@ -6,10 +6,11 @@ import {Navbar} from "./components/Navbar/Navbar";
 import {About} from "./components/MainInfo/About";
 import {Experience} from "./components/MainInfo/Experience";
 import {Projects} from "./components/MainInfo/Projects";
+import {Skills} from "./components/MainInfo/Skills";
 
 function App() {
     const [mode, setMode] = useState('light')
-    const [tab, setTab] = useState('experience')
+    const [tab, setTab] = useState('skills')
 
     const handleClick = (tab: string)=>{
         setTab(tab)
@@ -42,6 +43,7 @@ function App() {
                     {tab === "about" && <About/>}
                     {tab === "experience" && <Experience/>}
                     {tab === "projects" && <Projects/>}
+                    {tab === "skills" && <Skills/>}
                 </section>
 
                 <nav>

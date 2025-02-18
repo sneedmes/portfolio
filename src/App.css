@@ -187,7 +187,7 @@ main{
   background-color: var(--color-active);
 }
 
-.about, .experience, .projects{
+.about, .experience, .projects, .skills{
   border-radius: 14px;
   border: 3px var(--color-border) solid;
   background-color: var(--color-backProfile);
@@ -323,4 +323,35 @@ main{
   font-weight: bold;
   text-decoration: none;
   color: var(--color-profile);
+}
+
+.skills-container{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.skills-list{
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+}
+
+.list-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 79px;
+  padding: 5px;
+  border: 1px var(--color-border) solid;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 2px #F8DF91;
 }
