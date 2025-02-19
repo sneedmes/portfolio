@@ -38,7 +38,7 @@ export const Navbar = ({tab, onclick, mode}:NavProps) => {
                     }
                     Skills
                 </button>
-                <button onClick={()=>onclick("contact")} className={tab === 'contact' ? "button-active" : ""}>
+                <button onClick={()=>onclick("contacts")} className={tab === 'contacts' ? "button-active" : ""}>
                     {mode === 'light'
                         ? <img src="icons/contact.png" alt=""/>
                         : <img src="icons/contact-dark.png" alt=""/>

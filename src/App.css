@@ -187,7 +187,7 @@ main{
   background-color: var(--color-active);
 }
 
-.about, .experience, .projects, .skills{
+.about, .experience, .projects, .skills, .contacts{
   border-radius: 14px;
   border: 3px var(--color-border) solid;
   background-color: var(--color-backProfile);
@@ -354,4 +354,62 @@ main{
   border: 1px var(--color-border) solid;
   border-radius: 8px;
   box-shadow: 0 0 8px 2px #F8DF91;
+}
+
+.contacts-container{
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.contacts-container h3{
+  font-weight: bold;
+  font-size: 28px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-input{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-input label{
+  font-size: 20px;
+}
+
+.form-input input{
+  border-radius: 7px;
+  border: 2px var(--color-border) solid;
+  font-size: 18px;
+  padding: 10px;
+  color: var(--color-profile);
+  background-color: var(--color-backProfile);
+  outline-color: var(--color-main);
+}
+
+.form-input:not(:last-of-type) input{
+  height: 55px;
+}
+
+.form-input:last-of-type input{
+  height: 179px;
+}
+
+.contacts-container button{
+  padding: 12px 62px;
+  border-radius: 8px;
+  background-color: var(--color-active);
+  border: none;
+  width: 200px;
+  color: var(--color-backProfile);
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  align-self: flex-end;
+  margin-bottom: 50px;
 }
