@@ -7,43 +7,40 @@ type NavProps = {
 }
 
 export const Navbar = ({tab, onclick, mode}:NavProps) => {
+    function isBtnActive(tabName: string){
+        if(mode === 'light' && tab != tabName){
+            return <img src={"icons/" + tabName + ".png"} alt=""/>
+        } else if(mode === 'dark' && tab != tabName){
+            return <img src={"icons/" + tabName + "-dark.png"} alt=""/>
+        } else if(mode === 'light' && tab === tabName){
+            return <img src={"icons/" + tabName + "-active.png"} alt=""/>
+        } else if(mode === 'dark' && tab === tabName){
+            return <img src={"icons/" + tabName + ".png"} alt=""/>
+        }
+    }
+
     return (
         <section className="nav">
             <div className="nav-container">
                 <button onClick={()=>onclick("about")} className={tab === 'about' ? "button-active" : ""}>
-                    {mode === 'light'
-                        ? <img src="icons/about.png" alt=""/>
-                        : <img src="icons/about-dark.png" alt=""/>
-                    }
+                    {isBtnActive('about')}
                     About
                 </button>
                 <button onClick={()=>onclick("experience")} className={tab === 'experience' ? "button-active" : ""}>
-                    {mode === 'light'
-                        ? <img src="icons/experience.png" alt=""/>
-                        : <img src="icons/experience-dark.png" alt=""/>
-                    }
+                    {isBtnActive('experience')}
                     Experience
                 </button>
                 <button onClick={()=>onclick("projects")} className={tab === 'projects' ? "button-active" : ""}>
-                    {mode === 'light'
-                        ? <img src="icons/projects.png" alt=""/>
-                        : <img src="icons/projects-dark.png" alt=""/>
-                    }
+                    {isBtnActive('projects')}
                     Projects
                 </button>
                 <button onClick={()=>onclick("skills")} className={tab === 'skills' ? "button-active" : ""}>
-                    {mode === 'light'
-                        ? <img src="icons/skills.png" alt=""/>
-                        : <img src="icons/skills-dark.png" alt=""/>
-                    }
+                    {isBtnActive('skills')}
                     Skills
                 </button>
                 <button onClick={()=>onclick("contacts")} className={tab === 'contacts' ? "button-active" : ""}>
-                    {mode === 'light'
-                        ? <img src="icons/contact.png" alt=""/>
-                        : <img src="icons/contact-dark.png" alt=""/>
-                    }
-                    Contact
+                    {isBtnActive('contacts')}
+                    Contacts
                 </button>
             </div>
         </section>

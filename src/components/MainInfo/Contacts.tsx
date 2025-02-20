@@ -19,7 +19,7 @@ export const Contacts = () => {
 
                     <div className="form-input">
                         <label htmlFor="message">Message</label>
-                        <input type="text" id="message"/>
+                        <textarea name="message" id="message"></textarea>
                     </div>
 
                     <button>Submit</button>

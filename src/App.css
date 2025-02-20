@@ -18,6 +18,8 @@
   --color-contacts: #F9F6EA;
   --color-backProfile: white;
   --color-button: #E0CE93;
+  
+  --border-main: 3px var(--color-border) solid;
 }
 
 .dark-mode{
@@ -51,6 +53,7 @@ main{
   gap: 52px;
   align-items: center;
   padding-top: 38px;
+  padding-bottom: 50px;
 }
 
 .main-container .section{
@@ -85,7 +88,7 @@ main{
 
 .profile{
   border-radius: 13px;
-  border: 3px var(--color-border) solid;
+  border: var(--border-main);
   padding: 157px 43px 35px 43px;
   background-color: var(--color-backProfile);
 }
@@ -162,7 +165,7 @@ main{
   flex-direction: column;
   gap: 24px;
   padding: 33px 27px;
-  border: 3px var(--color-border) solid;
+  border: var(--border-main);
   border-radius: 15px;
   background-color: var(--color-backProfile);
 }
@@ -185,11 +188,12 @@ main{
 
 .nav-container .button-active{
   background-color: var(--color-active);
+  color: var(--color-main);
 }
 
 .about, .experience, .projects, .skills, .contacts{
   border-radius: 14px;
-  border: 3px var(--color-border) solid;
+  border: var(--border-main);
   background-color: var(--color-backProfile);
   font-family: "Poppins", sans-serif;
   padding: 29px 56px 43px 44px;
@@ -220,7 +224,7 @@ main{
 }
 
 .about-card{
-  border: 3px var(--color-border) solid;
+  border: var(--border-main);
   border-radius: 9px;
   display: flex;
   gap: 15px;
@@ -261,7 +265,7 @@ main{
   gap: 7px;
   padding: 17px 15px 20px 20px;
   border-radius: 9px;
-  border: 3px var(--color-border) solid;
+  border: var(--border-main);
 }
 
 .education-card p{
@@ -288,7 +292,7 @@ main{
   display: flex;
   gap: 20px;
   border-radius: 9px;
-  border: 3px var(--color-border) solid;
+  border: var(--border-main);
   padding: 21px 15px 23px 26px;
   max-width: 100%;
 }
@@ -308,7 +312,7 @@ main{
 }
 
 .projects-card{
-  border: 3px var(--color-border) solid;
+  border: var(--border-main);
   border-radius: 9px;
   display: flex;
   flex-direction: column;
@@ -383,7 +387,7 @@ form{
   font-size: 20px;
 }
 
-.form-input input{
+.form-input input, textarea{
   border-radius: 7px;
   border: 2px var(--color-border) solid;
   font-size: 18px;
@@ -397,7 +401,7 @@ form{
   height: 55px;
 }
 
-.form-input:last-of-type input{
+.form-input textarea{
   height: 179px;
 }
 
