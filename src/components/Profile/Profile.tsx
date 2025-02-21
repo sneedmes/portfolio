@@ -12,8 +12,8 @@ export const Profile = ({mode}:profileProps) => {
 
                 <div className="profile-main">
                     <img src="ava1.jpg" alt=""/>
-                    <h2>Susanna Dallaqyan</h2>
-                    <span>Web developer</span>
+                    <h2>Сусанна Даллакян</h2>
+                    <span>Веб-разработчик</span>
                 </div>
 
                 <div className="profile-social">
@@ -57,14 +57,14 @@ export const Profile = ({mode}:profileProps) => {
                                 ? <img src="icons/city.png" alt="" id="vk-light"/>
                                 : <img src="icons/city-dark.png" alt="" id="vk-dark"/>
                             }
-                            Samara, Russia
+                            Самара, Россия
                         </li>
                     </ul>
                 </div>
 
                 <div className="profile-button">
                     <button>
-                        View Resume
+                        Посмотреть резюме
                     </button>
                 </div>
             </div>

@@ -29,7 +29,7 @@ export const Projects = () => {
 
             <div className="projects-container">
 
-                <h3>Projects</h3>
+                <h3>Проекты</h3>
 
                 <div className="projects-cards">
                     {projects.map((info)=>

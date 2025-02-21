@@ -44,12 +44,13 @@ h2{
 }
 
 main{
-  padding: 0 100px;
+  padding: 0 50px;
   background-color: var(--color-main);
 }
 
 .main-container{
   display: flex;
+  justify-content: space-between;
   gap: 52px;
   align-items: center;
   padding-top: 38px;
@@ -57,7 +58,7 @@ main{
 }
 
 .main-container .section{
-  width: 865px;
+  min-width: 800px;
 }
 
 .header{
@@ -318,10 +319,10 @@ main{
   flex-direction: column;
   gap: 15px;
   background-color: var(--color-card-background);
-  padding: 22px 21px;
+  padding: 12px 11px;
   cursor: pointer;
+  width: 40%;
 }
-
 
 .projects-card a{
   font-weight: bold;
@@ -406,7 +407,7 @@ form{
 }
 
 .contacts-container button{
-  padding: 12px 62px;
+  padding: 12px 32px;
   border-radius: 8px;
   background-color: var(--color-active);
   border: none;
@@ -416,4 +417,5 @@ form{
   font-size: 21px;
   align-self: flex-end;
   margin-bottom: 50px;
+  cursor: pointer;
 }

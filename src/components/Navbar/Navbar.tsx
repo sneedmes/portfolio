@@ -24,23 +24,23 @@ export const Navbar = ({tab, onclick, mode}:NavProps) => {
             <div className="nav-container">
                 <button onClick={()=>onclick("about")} className={tab === 'about' ? "button-active" : ""}>
                     {isBtnActive('about')}
-                    About
+                    Обо мне
                 </button>
                 <button onClick={()=>onclick("experience")} className={tab === 'experience' ? "button-active" : ""}>
                     {isBtnActive('experience')}
-                    Experience
+                    Опыт
                 </button>
                 <button onClick={()=>onclick("projects")} className={tab === 'projects' ? "button-active" : ""}>
                     {isBtnActive('projects')}
-                    Projects
+                    Проекты
                 </button>
                 <button onClick={()=>onclick("skills")} className={tab === 'skills' ? "button-active" : ""}>
                     {isBtnActive('skills')}
-                    Skills
+                    Навыки
                 </button>
                 <button onClick={()=>onclick("contacts")} className={tab === 'contacts' ? "button-active" : ""}>
                     {isBtnActive('contacts')}
-                    Contacts
+                    Контакты
                 </button>
             </div>
         </section>

@@ -4,12 +4,12 @@ export const Experience = () => {
     const education = [
         {
             years: "2013-2024",
-            place: "School №34, Samara",
-            graduation: "Gold medal, 278 point"
+            place: "МБОУ Школа №34 имени Е.А. Зубчанинова, Самара",
+            graduation: "11 классов с отличием (золотая медаль)"
         },
         {
             years: "2024-2028",
-            place: "PRIVGUPS, Samara",
+            place: "Привгупс, Самара",
             graduation: "-"
         },
     ]
@@ -17,15 +17,15 @@ export const Experience = () => {
     const experience = [
         {
             img: "experiance/hakaton.png",
-            title: "Hakaton",
-            role: "Software Developer",
-            duration: "2 month (2021)"
+            title: "Хакатон",
+            role: "Разработчик андроид приложения",
+            duration: "2 месяца (2021)"
         },
         {
             img: "experiance/process.png",
-            title: "In process)",
-            role: "Web Developer",
-            duration: "Since 2019"
+            title: "В процессе)",
+            role: "Веб-разработчик",
+            duration: "С 2019 года"
         },
     ]
     return (
@@ -33,7 +33,7 @@ export const Experience = () => {
 
             <div className="experience-container">
                 <div className="education">
-                    <h3>Education</h3>
+                    <h3>Образование</h3>
                     <div className="education-cards">
                         {education.map((info) =>
                             <div className="education-card">
@@ -45,15 +45,15 @@ export const Experience = () => {
                     </div>
                 </div>
                 <div className="work">
-                    <h3>Experience</h3>
+                    <h3>Опыт</h3>
                     <div className="experience-cards">
                         {experience.map((info) =>
                             <div className="experience-card">
                                 <img src={info.img} alt=""/>
                                 <div className="card-info">
-                                    <p><span>Company: {info.title}</span></p>
-                                    <p><span>Role:</span> {info.role}</p>
-                                    <p><span>Duration: </span>{info.duration}</p>
+                                    <p><span>Компания: {info.title}</span></p>
+                                    <p><span>Должность:</span> {info.role}</p>
+                                    <p><span>Продолжительность: </span>{info.duration}</p>
                                 </div>
                             </div>
                         )}</div>

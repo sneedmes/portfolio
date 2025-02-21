@@ -44,7 +44,7 @@ function App() {
                     {tab === "about" && <About/>}
                     {tab === "experience" && <Experience/>}
                     {tab === "projects" && <Projects/>}
-                    {tab === "skills" && <Skills/>}
+                    {tab === "skills" && <Skills mode={mode}/>}
                     {tab === "contacts" && <Contacts/>}
                 </section>
 

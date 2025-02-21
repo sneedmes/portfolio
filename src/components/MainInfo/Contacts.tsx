@@ -8,21 +8,21 @@ export const Contacts = () => {
                 <h3>Contacts</h3>
                 <form method="post">
                     <div className="form-input">
-                        <label htmlFor="mail">Email Address</label>
+                        <label htmlFor="mail">Почта</label>
                         <input type="text" id="mail"/>
                     </div>
 
                     <div className="form-input">
-                        <label htmlFor="subject">Subject</label>
+                        <label htmlFor="subject">Тема</label>
                         <input type="text" id="subject"/>
                     </div>
 
                     <div className="form-input">
-                        <label htmlFor="message">Message</label>
+                        <label htmlFor="message">Сообщение</label>
                         <textarea name="message" id="message"></textarea>
                     </div>
 
-                    <button>Submit</button>
+                    <button>Отправить</button>
                 </form>
             </div>
 
